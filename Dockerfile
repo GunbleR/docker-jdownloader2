@@ -9,6 +9,7 @@ RUN export TZ=Europe/Rome && \
 	echo $TZ > /etc/timezone && \
 	apt-get -y install --no-install-recommends fonts-takao netcat-traditional && \
 	apt-get -y install ffmpeg && \
+ 	apt-get -y install nodejs python3 python3-pip
 	echo "ko_KR.UTF-8 UTF-8" >> /etc/locale.gen && \ 
 	echo "ja_JP.UTF-8 UTF-8" >> /etc/locale.gen && \
 	locale-gen && \
